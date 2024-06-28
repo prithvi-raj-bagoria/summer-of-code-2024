@@ -1,0 +1,126 @@
+:root {
+    --font-family: sans-serif;
+}
+
+/* browser  */
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* anchor tags  */
+a {
+    text-decoration: none;
+    color: white;
+}
+:is(a, button):hover {
+    transform: scale(1.05);
+}
+/* background for images and stuff */
+.background {
+    height: 100vh;
+
+    background: url("images/shoppingGirl.jpg"), rgba(0, 0, 0, 0.2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* outer container of the form start  */
+.form-container {
+    border: 1px solid rgb(255, 255, 255);
+    background: rgba(129, 129, 129, 0.14);
+    border-radius: 50px;
+    padding: 100px 50px;
+}
+
+/* outer container of form ends here  */
+
+/* form starts here  */
+form {
+    height: 60vh;
+    background-color: rgba(67, 67, 67, 0.019);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form-item :is(h1, h5, p) {
+    color: white;
+}
+
+.form-item input {
+    width: 100%;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 5px;
+}
+
+.form-item input:focus {
+    outline: 1px solid black;
+}
+.form-item button {
+    width: 100%;
+
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+
+    padding: 10px 0;
+    background-color: rgb(190, 0, 0);
+    border: none;
+    border-radius: 10px;
+}
+.password p {
+    margin: 10px 0;
+    font-size: 0.7rem;
+}
+
+.others img {
+    width: 20px;
+}
+.others {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.others div {
+    height: 40px;
+    width: 100px;
+
+    margin: 10px 10px;
+
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 640px) {
+    .form-container {
+        padding: 50px 10px;
+    }
+    .others div {
+        width: 25vw;
+    }
+}
+@media screen and (min-width: 640px) and (max-width: 1100px) {
+    .form-container {
+        padding: 100px 10vw;
+    }
+    .others div {
+        width: 100px;
+    }
+}

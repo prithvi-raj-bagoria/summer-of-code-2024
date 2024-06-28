@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- seo optimization -->
+        <meta name="keywords" content="login,signup" />
+        <meta name="description" content="Login/Signup Page" />
+        <title>VibeVista-Login</title>
+        <!-- links -->
+        <link rel="shortcut icon" href="images/VibeVista.png" type="image/x-icon" />
+        <link rel="stylesheet" href="login.css" />
+    </head>
+    <body>
+        <!-- background for photos  -->
+        <div class="background">
+            <!-- main form  -->
+            <div class="form-container">
+                <form action="login.php">
+                    <h1 class="form-item">Login</h1>
+
+                    <div class="form-item email">
+                        <h5>Email</h5>
+                        <label for="email">
+                            <input type="email" name="email" id="email" placeholder="username@gmail.com" />
+                        </label>
+                    </div>
+                    <div class="form-item password">
+                        <h5>Password</h5>
+                        <label for="password">
+                            <input type="password" name="password" id="password" placeholder="password" />
+                        </label>
+                        <p><a href="">Forgot Password ? </a></p>
+                    </div>
+                    <div class="form-item signin">
+                        <button type="submit">Sign In</button>
+                    </div>
+
+                    <p>or sign in with</p>
+
+                    <!-- other methods to sign in  -->
+                    <div class="form-item others">
+                        <a href="">
+                            <div class="google">
+                                <img src="images/google logo.png" alt="" />
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="github">
+                                <img src="images/github logo.png" alt="" />
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="facebook">
+                                <img src="images/facebook logo.png" alt="" />
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="form-item register">
+                        <p>
+                            Don't have an account yet ? <a href=""><b>Register for free</b></a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

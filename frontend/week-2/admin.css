@@ -1,0 +1,36 @@
+/* varialble  */
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #eeeeee;
+    --blue-color: blue;
+}
+
+/* navbar  */
+nav {
+    background-color: var(--primary-color);
+}
+
+.nav-item {
+    margin: 0 5px;
+    padding: 0 5px;
+    background: var(--primary-color);
+}
+
+.nav-link svg {
+    width: 20px;
+}
+/* body  */
+body:not(nav) {
+    background-color: var(--secondary-color);
+}
+.top-stocks .row {
+    justify-content: center;
+}
+.top-stocks .row .col {
+    margin: 1vw 1vw;
+    padding: 10% 15%;
+    text-align: center;
+
+    background-color: var(--primary-color);
+    border-radius: 2vw;
+}

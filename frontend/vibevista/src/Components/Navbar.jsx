@@ -31,7 +31,7 @@ const Navbar = ({ logo, logowidth, bgColor = "light", navColor = "light" }) => {
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0"></ul>
                     <form className="d-flex" role="search">
                         <input
-                            className="form-control me-2"
+                            className="form-control me-2 rounded-5"
                             type="search"
                             placeholder="Search"
                             aria-label="Search"

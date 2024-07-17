@@ -24,10 +24,7 @@ const Navbar = ({ logo, logowidth, bgColor = "light", navColor = "light" }) => {
                 >
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div
-                    className="collapse navbar-collapse"
-                    id="navbarSupportedContent"
-                >
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0"></ul>
                     <form className="d-flex" role="search">
                         <input
@@ -40,6 +37,7 @@ const Navbar = ({ logo, logowidth, bgColor = "light", navColor = "light" }) => {
                         <Button
                             text="Logout"
                             style="ms-2 btn btn-danger rounded-4"
+                            color="#ff7f50"
                         />
                     </form>
                 </div>

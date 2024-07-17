@@ -1,35 +1,22 @@
 import React from "react";
 
-import Navbar from "../Components/Navbar";
-import Button from "../Components/Button";
-import Card from "../Components/Card";
-
 import VibeVista from "../assets/images/VibeVista.png";
 import google from "../assets/images/google.png";
+import facebook from "../assets/images/facebook.png";
+import github from "../assets/images/github.png";
+
+import Button from "../Components/Button";
+import Input from "../Components/Input";
+import Navbar from "../Components/Navbar";
 
 const Cashier = () => {
     return (
-        <>
-            <Navbar
-                logo={VibeVista}
-                logowidth="50px"
-                bgColor="orange"
-                navColor="light"
-            />
-            <Button
-                style=" m-5 btn btn-outline-light rounded-4"
-                width={"15vw"}
-                imgwidth="20px"
-                img={google}
-            />
-            <Card
-                img={google}
-                imgwidth="20vw"
-                width="25vw"
-                title="Cheese Burger"
-                text="99.99/-"
-            />
-        </>
+        <div
+            className="m-0 p-0 container-fluidr"
+            style={{ background: "whitesmoke", height: "100vh" }}
+        >
+            <Navbar logo={VibeVista} logowidth="30px" bgColor="whitesmoke" navColor="light" />
+        </div>
     );
 };
 

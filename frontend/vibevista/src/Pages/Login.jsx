@@ -1,6 +1,7 @@
 import React from "react";
 
 import VibeVista from "../assets/images/VibeVista.png";
+import TwoGirls from "../assets/images/TwoGirls.png";
 import google from "../assets/images/google.png";
 import facebook from "../assets/images/facebook.png";
 import github from "../assets/images/github.png";
@@ -11,23 +12,28 @@ import Input from "../Components/Input";
 const Login = () => {
     return (
         <div
-            className="m-0 p-0 container-fluid d-flex justify-content-center align-items-center"
+            className="m-0 p-0 container-fluid d-flex justify-content-around align-items-center"
             style={{
-                background: " linear-gradient(to top,#780206,#061161)",
+                background: " linear-gradient(to top,#E1DADA ,  #BDCAD9)",
                 width: "100vw",
                 height: "100vh",
+                overflow: "hidden",
             }}
         >
+            <div className=" container-fluid   position-relative ">
+                <img src={TwoGirls} style={{ width: "500px" }} />
+            </div>
             <div
-                className="m-0 p-0 container-sm d-flex flex-column justify-content-between gap-3  rounded-5 text-light"
+                className="m-0 p-0 container-sm d-flex flex-column justify-content-between gap-3  rounded-5 text-dark position-absolute"
                 style={{
-                    background: "rgba(255, 255, 255, 0.1)",
+                    background: "rgba(0,0,0, 0.05)",
                     height: "calc(60vh + 10rem)",
                     width: "calc(10vw + 20rem)",
-                    boxShadow: "0 16px 16px rgb(0,0,0,0.05)",
+                    border: "1px solid rgba(0,0,0,0.1)",
+                    boxShadow: "0 16px 32px rgb(0,0,0,0.1)",
                 }}
             >
-                <a href="#" className="m-2 text-light text-decoration-none">
+                <a href="#" className="m-2 text-dark text-decoration-none">
                     <h4>
                         <img src={VibeVista} style={{ width: "40px" }} alt="VibeVista Logo" />
                         VibeVista
@@ -44,7 +50,7 @@ const Login = () => {
                         <Input type="password" placeholder="password" />
                         <a
                             href=""
-                            className="mt-1 link-light link-underline-none "
+                            className="mt-1 link-dark link-underline-none "
                             style={{ textDecoration: "none" }}
                         >
                             <p>Forgot Password ?</p>
@@ -80,7 +86,7 @@ const Login = () => {
                     <a
                         href=""
                         style={{ textDecoration: "none" }}
-                        className="mx-1 text-light fw-bold"
+                        className="mx-1 text-dark fw-bold"
                     >
                         Register for free
                     </a>

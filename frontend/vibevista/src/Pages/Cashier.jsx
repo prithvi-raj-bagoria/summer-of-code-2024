@@ -10,14 +10,11 @@ import Input from "../Components/Input";
 import Navbar from "../Components/Navbar";
 
 const Cashier = () => {
-    return (
-        <div
-            className="m-0 p-0 container-fluidr"
-            style={{ background: "whitesmoke", height: "100vh" }}
-        >
-            <Navbar logo={VibeVista} logowidth="30px" bgColor="whitesmoke" navColor="light" />
-        </div>
-    );
+  return (
+    <div className="m-0 p-0 container-fluidr" style={{ background: "whitesmoke", height: "100vh" }}>
+      <Navbar logo={VibeVista} logowidth="30px" bgColor="whitesmoke" navColor="light" />
+    </div>
+  );
 };
 
 export default Cashier;

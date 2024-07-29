@@ -11,6 +11,9 @@ const BeforeLogin = () => {
   const [mobile, setMobile] = useState("");
   const [address, setAddress] = useState("");
 
+  const emptyCase = () => (
+    <p className="fs-4 text-secondary">Please Enter your Details to see .</p>
+  );
   return (
     <>
       <div className="m-0 p-0 container-fluid">
@@ -77,7 +80,37 @@ const BeforeLogin = () => {
             </form>
             <p className="fw-light"> * marked fields are mandatory.</p>
           </div>
-          <div className=" ms-5 col-4 row d-flex flex-column bg-danger rounded-4"></div>
+          <div className=" ms-5 col-4 row d-flex flex-column justify-content-evenly bg-warning rounded-4">
+            {name == "" && mobile === "" && address === "" ? emptyCase() : ""}
+            <h3 className="m-2  text-center text-danger text-decoration-underline">
+              Details Entered
+            </h3>
+            <span>
+              <h2 className="text-danger">Name</h2>
+              <p className="fs-4 text-light text-center bg-danger rounded-5 ">
+                {name}
+              </p>
+            </span>
+            <span>
+              <h2 className="text-danger">Mobile</h2>
+              <p className="fs-4 text-light text-center bg-danger rounded-5 ">
+                {mobile}
+              </p>
+            </span>
+            <span>
+              <h2 className="text-danger">Address</h2>
+              <p className="fs-4 text-light text-center bg-danger rounded-5 ">
+                {address}
+              </p>
+            </span>
+
+            <div className="d-flex justify-content-end">
+              <Button
+                style=" mt-4 btn  btn-danger text-end rounded-2"
+                text="Proceed to Checkout "
+              />
+            </div>
+          </div>
         </div>
       </div>
     </>

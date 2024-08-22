@@ -9,9 +9,10 @@ import BeforeLogin from "./src/Pages/Cashier/BeforeLogin.jsx";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import AfterLogin from "./src/Pages/Cashier/AfterLogin.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BeforeLogin />
+    <AfterLogin />
   </React.StrictMode>
 );

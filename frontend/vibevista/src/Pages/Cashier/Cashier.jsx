@@ -13,9 +13,14 @@ const Cashier = () => {
   return (
     <div
       className="m-0 p-0 container-fluid"
-      style={{ background: "whitesmoke", height: "100vh", overflow: "hidden" }}
+      style={{ background: "whitesmoke" }}
     >
-      <Navbar logo={VibeVista} logowidth="30px" bgColor="whitesmoke" navColor="light" />
+      <Navbar
+        logo={VibeVista}
+        logowidth="30px"
+        bgColor="whitesmoke"
+        navColor="light"
+      />
     </div>
   );
 };
